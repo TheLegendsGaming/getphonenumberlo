@@ -53,7 +53,7 @@ def arp_spoof(target_ip, target_mac, gateway_ip):
     send(packet, verbose=0)
 
 def main():
-    ip_range = "192.168.1.1/24"  # Modify based on your network
+    ip_range = "172.30.55.1/24"  # Modify based on your network
     gateway_ip = get_gateway_ip()
     if not gateway_ip:
         print("❌ Could not determine the default gateway IP.")
